@@ -14,4 +14,8 @@ class M_user extends CI_Model {
         return $this->db->update('user', $data);
     }
 
+
+    function read() {
+        return $this->db->get('user');
+    }
 }
